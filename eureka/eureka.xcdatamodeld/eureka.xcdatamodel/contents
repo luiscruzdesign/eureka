@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ideia" representedClassName="Ideia" syncable="YES" codeGenerationType="class">
+        <attribute name="atividades_chave" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="canais" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esforco" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="estrutura_custo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fontes_renda" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="impacto" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lucratividade" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parcerias_chave" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="proposta_valor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recursos_chave" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relacao_cliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="segmentos_mercado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visao" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Ideia" positionX="-63" positionY="-18" width="128" height="30"/>
+    </elements>
 </model>

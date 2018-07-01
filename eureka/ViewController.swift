@@ -8,11 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let list = ["Fazer uma pousada",
+                "Ser dono de um bar",
+                "Criar o novo Uber",
+                "Montar um time de futebol",
+                "Vender hot dog",
+                "Vender sushi na praia",
+                "Programar um concorrente para o Fifa",
+                "Criar uma marca de roupas",
+                "Lançar uma nova criptomoeda",
+                "Me naturalizar islandês e jogar na seleção",
+                "Fazer cerveja artesanal",
+                "Fazer uma banda de trash metal",
+                "Criar um canal no YouTube sobre esportes"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return(list.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+        
+        return(cell)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
