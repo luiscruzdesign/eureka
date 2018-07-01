@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var contador_ideias: UILabel!
     
     let list = ["Fazer uma pousada",
                 "Ser dono de um bar",
@@ -39,6 +40,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        /* Contador de ideias na home */
+        let listCount = list.count
+        
+        if listCount == 0 {
+            // do nothing
+        } else if listCount == 1 {
+            contador_ideias.text = "Você tem " + String(listCount) + " ideia na lista"
+        } else {
+            contador_ideias.text = "Você tem " + String(listCount) + " ideias na lista"
+        }
         
     }
 
