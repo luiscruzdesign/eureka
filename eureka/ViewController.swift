@@ -8,6 +8,16 @@
 
 import UIKit
 
+var nome = ""
+var descricao = ""
+var segmentosMercado = ""
+var propostaValor = ""
+var canais = ""
+var impacto = 0
+var esforco = 0
+var lucratividade = 0
+var visao = 0
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var contador_ideias: UILabel!
     
@@ -51,6 +61,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             contador_ideias.text = "Você tem " + String(listCount) + " ideias na lista"
         }
+        
+        /* nova ideia */
+        print("------------ \nTela: INICIAL")
+        print("Nome da ideia: " + nome)
+        print("Descrição da ideia: " + descricao)
+        print("Segmentos de mercado: " + segmentosMercado)
+        print("Proposta de valor: " + propostaValor)
+        print("Canais: " + canais)
+        print("Impacto: " + String(impacto))
+        print("Esforço: " + String(esforco))
+        print("Lucratividade: " + String(lucratividade))
+        print("Visão: " + String(visao))
         
     }
 

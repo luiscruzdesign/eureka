@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Descreva View Controller-->
         <scene sceneID="qkP-kA-IaT">
             <objects>
-                <viewController id="vww-Z8-zHu" sceneMemberID="viewController">
+                <viewController id="vww-Z8-zHu" customClass="DescrevaViewController" customModule="eureka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dfO-vc-VtX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +126,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="submitDescricao:" destination="vww-Z8-zHu" eventType="touchUpInside" id="RwI-vk-4Q7"/>
                                     <segue destination="vfL-0h-LCO" kind="show" id="ECj-6B-kcy"/>
                                 </connections>
                             </button>
@@ -180,16 +181,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XaM-aH-Lgv"/>
                     </view>
+                    <connections>
+                        <outlet property="descricaoIdeia" destination="FXV-fD-nx7" id="EqL-UA-7yM"/>
+                        <outlet property="nomeIdeia" destination="tAS-ns-bdm" id="QG5-qt-rPz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBA-zM-vHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1852" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Canvas View Controller-->
         <scene sceneID="kLv-ci-UN0">
             <objects>
-                <viewController id="vfL-0h-LCO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A5E-rd-yhg">
+                <viewController id="vfL-0h-LCO" customClass="CanvasViewController" customModule="eureka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5E-rd-yhg" customClass="Canvas">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -260,6 +265,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="submitCanvas:" destination="vfL-0h-LCO" eventType="touchUpInside" id="pOJ-Wh-4HD"/>
                                     <segue destination="Q8b-ne-X3H" kind="show" id="YBe-5g-Cpd"/>
                                 </connections>
                             </button>
@@ -293,6 +299,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UGN-6N-bej"/>
                     </view>
+                    <connections>
+                        <outlet property="canaisIdeia" destination="miw-Zf-5oR" id="PXz-ib-13R"/>
+                        <outlet property="propostaValorIdeia" destination="tPx-P2-hZM" id="hl0-bu-eFE"/>
+                        <outlet property="segmentosIdeia" destination="Otn-8h-4nu" id="145-Wr-y7j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1E-xw-jly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -340,6 +351,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAvaliacao:" destination="Q8b-ne-X3H" eventType="touchUpInside" id="d8d-58-6u1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NG7-a5-c1v">
                                 <rect key="frame" x="16" y="539" width="343" height="50"/>
