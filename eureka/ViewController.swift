@@ -52,17 +52,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        /* Contador de ideias na home */
-        let listCount = list.count
-        
-        if listCount == 0 {
-            // do nothing
-        } else if listCount == 1 {
-            contador_ideias.text = "Você tem " + String(listCount) + " ideia na lista"
-        } else {
-            contador_ideias.text = "Você tem " + String(listCount) + " ideias na lista"
-        }
-        
         /* nova ideia */
         print("------------ \nTela: INICIAL")
         print("Nome da ideia: " + nome)
@@ -91,6 +80,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     if let nome = result.value(forKey: "nome") as? String {
                         print(nome)
                     }
+                }
+                /* Contador de ideias na home */
+                if results.count == 0 {
+                    // do nothing
+                } else if results.count == 1 {
+                    contador_ideias.text = "Você tem " + String(results.count) + " ideia na lista"
+                } else {
+                    contador_ideias.text = "Você tem " + String(results.count) + " ideias na lista"
                 }
             }
         } catch {
