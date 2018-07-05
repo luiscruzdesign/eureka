@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 var nome = ""
 var descricao = ""
@@ -73,6 +74,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("Esforço: " + String(esforco))
         print("Lucratividade: " + String(lucratividade))
         print("Visão: " + String(visao))
+        
+        // Accessing Core Data
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        // Retrieving data
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Ideia")
+        request.returnsObjectsAsFaults = false
+        
+        do {
+            let results = try context.fetch(request)
+            
+            if results.count > 0 {
+                for result in results as! [NSManagedObject] {
+                    if let nome = result.value(forKey: "nome") as? String {
+                        print(nome)
+                    }
+                }
+            }
+        } catch {
+            // TREAT ERRORS
+        }
         
     }
 

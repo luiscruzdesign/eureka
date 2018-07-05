@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AvalieViewController: UIViewController {
     @IBOutlet weak var contadorImpacto: UILabel!
@@ -41,6 +42,37 @@ class AvalieViewController: UIViewController {
         print("Esforço: " + String(esforco))
         print("Lucratividade: " + String(lucratividade))
         print("Visão: " + String(visao))
+        
+        // Accessing Core Data
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        // Inserting data
+        let novaIdeia = NSEntityDescription.insertNewObject(forEntityName: "Ideia", into: context)
+        
+        novaIdeia.setValue(nome, forKey: "nome")
+        novaIdeia.setValue(descricao, forKey: "descricao")
+        novaIdeia.setValue(segmentosMercado, forKey: "segmentos_mercado")
+        novaIdeia.setValue(propostaValor, forKey: "proposta_valor")
+        novaIdeia.setValue(canais, forKey: "canais")
+        novaIdeia.setValue("Lorem ipsum", forKey: "estrutura_custo")
+        novaIdeia.setValue("Lorem ipsum", forKey: "fontes_renda")
+        novaIdeia.setValue("Lorem ipsum", forKey: "parcerias_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "recursos_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "relacao_cliente")
+        novaIdeia.setValue("Lorem ipsum", forKey: "atividades_chave")
+        novaIdeia.setValue(impacto, forKey: "impacto")
+        novaIdeia.setValue(esforco, forKey: "esforco")
+        novaIdeia.setValue(lucratividade, forKey: "lucratividade")
+        novaIdeia.setValue(visao, forKey: "visao")
+        
+        do {
+            try context.save()
+            print("SAVED")
+        } catch {
+            // TREAT ERRORS
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -57,6 +89,72 @@ class AvalieViewController: UIViewController {
         print("Esforço: " + String(esforco))
         print("Lucratividade: " + String(lucratividade))
         print("Visão: " + String(visao))
+        
+        /*
+        // Accessing Core Data
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        // Inserting data
+        let novaIdeia = NSEntityDescription.insertNewObject(forEntityName: "Ideia", into: context)
+        
+        // Listagem de ideias para popular banco
+        // 01
+        novaIdeia.setValue("Fazer uma pousada", forKey: "nome")
+        novaIdeia.setValue("Fazer uma pousada na beira do mar", forKey: "descricao")
+        novaIdeia.setValue("Surfistas", forKey: "segmentos_mercado")
+        novaIdeia.setValue("Simplicidade e conexão com a natureza", forKey: "proposta_valor")
+        novaIdeia.setValue("Publicações sobre surf e cultura vegana, natureba", forKey: "canais")
+        novaIdeia.setValue("Lorem ipsum", forKey: "estrutura_custo")
+        novaIdeia.setValue("Lorem ipsum", forKey: "fontes_renda")
+        novaIdeia.setValue("Lorem ipsum", forKey: "parcerias_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "recursos_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "relacao_cliente")
+        novaIdeia.setValue("Lorem ipsum", forKey: "atividades_chave")
+        novaIdeia.setValue(70, forKey: "impacto")
+        novaIdeia.setValue(90, forKey: "esforco")
+        novaIdeia.setValue(20, forKey: "lucratividade")
+        novaIdeia.setValue(65, forKey: "visao")
+        
+        // 02
+        novaIdeia.setValue("Ser dono de um bar", forKey: "nome")
+        novaIdeia.setValue("Fazer um bar de rock e cervejas artesanais", forKey: "descricao")
+        novaIdeia.setValue("Pessoas que gostam de rock anos 70", forKey: "segmentos_mercado")
+        novaIdeia.setValue("O melhor lugar para ouvir rock na cidade", forKey: "proposta_valor")
+        novaIdeia.setValue("Mídias sociais", forKey: "canais")
+        novaIdeia.setValue("Lorem ipsum", forKey: "estrutura_custo")
+        novaIdeia.setValue("Lorem ipsum", forKey: "fontes_renda")
+        novaIdeia.setValue("Lorem ipsum", forKey: "parcerias_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "recursos_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "relacao_cliente")
+        novaIdeia.setValue("Lorem ipsum", forKey: "atividades_chave")
+        novaIdeia.setValue(50, forKey: "impacto")
+        novaIdeia.setValue(90, forKey: "esforco")
+        novaIdeia.setValue(40, forKey: "lucratividade")
+        novaIdeia.setValue(70, forKey: "visao")
+        // 03
+        novaIdeia.setValue("Criar o novo Uber", forKey: "nome")
+        novaIdeia.setValue("Fazer um benchmark dos concorrentes e montar a melhor ferramenta", forKey: "descricao")
+        novaIdeia.setValue("Classe B e C", forKey: "segmentos_mercado")
+        novaIdeia.setValue("Segurança e agilidade", forKey: "proposta_valor")
+        novaIdeia.setValue("Mídias sociais", forKey: "canais")
+        novaIdeia.setValue("Lorem ipsum", forKey: "estrutura_custo")
+        novaIdeia.setValue("Lorem ipsum", forKey: "fontes_renda")
+        novaIdeia.setValue("Lorem ipsum", forKey: "parcerias_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "recursos_chave")
+        novaIdeia.setValue("Lorem ipsum", forKey: "relacao_cliente")
+        novaIdeia.setValue("Lorem ipsum", forKey: "atividades_chave")
+        novaIdeia.setValue(50, forKey: "impacto")
+        novaIdeia.setValue(90, forKey: "esforco")
+        novaIdeia.setValue(70, forKey: "lucratividade")
+        novaIdeia.setValue(30, forKey: "visao")
+
+        do {
+            try context.save()
+            print("SAVED")
+        } catch {
+            // TREAT ERRORS
+        }*/
         
     }
 
