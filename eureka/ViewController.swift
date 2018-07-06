@@ -19,22 +19,24 @@ var esforco = 0
 var lucratividade = 0
 var visao = 0
 
+var list = ["Fazer uma pousada",
+            "Ser dono de um bar",
+            "Criar o novo Uber",
+            "Montar um time de futebol",
+            "Vender hot dog",
+            "Vender sushi na praia",
+            "Programar um concorrente para o Fifa",
+            "Criar uma marca de roupas",
+            "Lançar uma nova criptomoeda",
+            "Me naturalizar islandês e jogar na seleção",
+            "Fazer cerveja artesanal",
+            "Fazer uma banda de trash metal",
+            "Criar um canal no YouTube sobre esportes"]
+
+var myIndex = 0
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var contador_ideias: UILabel!
-    
-    let list = ["Fazer uma pousada",
-                "Ser dono de um bar",
-                "Criar o novo Uber",
-                "Montar um time de futebol",
-                "Vender hot dog",
-                "Vender sushi na praia",
-                "Programar um concorrente para o Fifa",
-                "Criar uma marca de roupas",
-                "Lançar uma nova criptomoeda",
-                "Me naturalizar islandês e jogar na seleção",
-                "Fazer cerveja artesanal",
-                "Fazer uma banda de trash metal",
-                "Criar um canal no YouTube sobre esportes"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
@@ -45,6 +47,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = list[indexPath.row]
         
         return(cell)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
     }
     
 

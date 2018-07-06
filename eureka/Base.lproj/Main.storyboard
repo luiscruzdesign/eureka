@@ -92,11 +92,46 @@
                     <navigationItem key="navigationItem" id="Jvv-CL-zZC"/>
                     <connections>
                         <outlet property="contador_ideias" destination="tHk-gl-yMe" id="vxu-FE-Xr9"/>
+                        <segue destination="UHq-ZE-bPe" kind="show" identifier="segue" id="8P3-X5-oga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
+        </scene>
+        <!--Ideia View Controller-->
+        <scene sceneID="GFo-FA-WvL">
+            <objects>
+                <viewController id="UHq-ZE-bPe" customClass="IdeiaViewController" customModule="eureka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cmS-yV-yed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome ideia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1u-O3-BrF">
+                                <rect key="frame" x="16" y="84" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IZb-Q9-Kyi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i1u-O3-BrF" firstAttribute="top" secondItem="afX-ib-0PA" secondAttribute="top" constant="20" id="GPW-9f-3QG"/>
+                            <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="i1u-O3-BrF" secondAttribute="trailing" constant="16" id="Xhp-Cl-m3w"/>
+                            <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="f4f-OF-qA9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="afX-ib-0PA"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelIdeia" destination="i1u-O3-BrF" id="X1O-yN-m8M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxu-fk-xND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-613"/>
         </scene>
         <!--Descreva View Controller-->
         <scene sceneID="qkP-kA-IaT">
