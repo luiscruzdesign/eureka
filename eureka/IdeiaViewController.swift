@@ -10,12 +10,14 @@ import UIKit
 
 class IdeiaViewController: UIViewController {
     @IBOutlet weak var labelIdeia: UILabel!
+    @IBOutlet weak var descricaoIdeia: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        labelIdeia.text = list[myIndex]
+        labelIdeia.text = ideiasNomes[myIndex]
+        descricaoIdeia.text = ideiasDescricoes[myIndex]
     }
 
     override func didReceiveMemoryWarning() {

@@ -107,7 +107,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me naturalizar islandês e jogar na seleção" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1u-O3-BrF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da ideia" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1u-O3-BrF">
                                 <rect key="frame" x="16" y="84" width="343" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="p8W-TJ-cC3"/>
@@ -116,19 +116,31 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fazer o melhor jogo de futebol open-source possível, campeonato brasileiro 100% atualizado e com todos os estádios" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9L-5g-9VK">
+                                <rect key="frame" x="16" y="242" width="343" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="v9L-5g-9VK" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="16O-vS-AjM"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="top" secondItem="afX-ib-0PA" secondAttribute="top" constant="20" id="GPW-9f-3QG"/>
+                            <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="v9L-5g-9VK" secondAttribute="trailing" constant="16" id="Pas-jk-9nA"/>
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="i1u-O3-BrF" secondAttribute="trailing" constant="16" id="Pxz-7K-fCX"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="W8S-Lz-4iF"/>
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="i1u-O3-BrF" secondAttribute="trailing" constant="16" id="Xhp-Cl-m3w"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="top" secondItem="afX-ib-0PA" secondAttribute="top" constant="20" id="YE1-5l-QVo"/>
+                            <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="v9L-5g-9VK" secondAttribute="trailing" constant="16" id="byp-bx-fSH"/>
+                            <constraint firstItem="v9L-5g-9VK" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="ezs-1F-A1G"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="f4f-OF-qA9"/>
+                            <constraint firstItem="v9L-5g-9VK" firstAttribute="top" secondItem="i1u-O3-BrF" secondAttribute="bottom" constant="8" id="oZz-0F-op6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="afX-ib-0PA"/>
                     </view>
                     <connections>
+                        <outlet property="descricaoIdeia" destination="v9L-5g-9VK" id="MAD-26-MxW"/>
                         <outlet property="labelIdeia" destination="i1u-O3-BrF" id="X1O-yN-m8M"/>
                     </connections>
                 </viewController>

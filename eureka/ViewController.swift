@@ -19,19 +19,37 @@ var esforco = 0
 var lucratividade = 0
 var visao = 0
 
-var list = ["Fazer uma pousada",
-            "Ser dono de um bar",
-            "Criar o novo Uber",
-            "Montar um time de futebol",
-            "Vender hot dog",
-            "Vender sushi na praia",
-            "Programar um concorrente para o Fifa",
-            "Criar uma marca de roupas",
-            "Lançar uma nova criptomoeda",
-            "Me naturalizar islandês e jogar na seleção",
-            "Fazer cerveja artesanal",
-            "Fazer uma banda de trash metal",
-            "Criar um canal no YouTube sobre esportes"]
+var ideiasNomes = [
+    "Fazer uma pousada",
+    "Ser dono de um bar",
+    "Criar o novo Uber",
+    "Montar um time de futebol",
+    "Vender hot dog",
+    "Vender sushi na praia",
+    "Programar um concorrente para o Fifa",
+    "Criar uma marca de roupas",
+    "Lançar uma nova criptomoeda",
+    "Me naturalizar islandês e jogar na seleção",
+    "Fazer cerveja artesanal",
+    "Fazer uma banda de trash metal",
+    "Criar um canal no YouTube sobre esportes"
+]
+
+var ideiasDescricoes = [
+    "Pousada na praia para amantes do surf",
+    "Bar raíz de rock 'n roll",
+    "O aplicativo de locomoção mais rápido da cidade e com preços abaixo do uber",
+    "Fazer o time de futebol mais raíz da cidade",
+    "Fazer cachorro-quente no estilo Maringá",
+    "Uma comida que todos gostam mas que ninguém teve coragem de vender na praia",
+    "Fazer o melhor jogo de futebol open-source possível, campeonato brasileiro 100% atualizado e com todos os estádios",
+    "Fazer uma marca de roupas com camisetas básicas e também com camisetas estilosas",
+    "Criar a primeira criptomoeda para negociação de cerveja",
+    "Poder jogar uma copa do mundo em um país com menos competitividade para entrar na seleção",
+    "Criar uma familília de cervejas exclusivas para beber com meus amigos",
+    "Excursionar pelo mundo tocando um som pesado",
+    "Poder falar sobre futebol o dia todo e ainda faturar um dinheiro"
+]
 
 var myIndex = 0
 
@@ -39,12 +57,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var contador_ideias: UILabel!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return(list.count)
+        return(ideiasNomes.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.text = ideiasNomes[indexPath.row]
         
         return(cell)
     }
