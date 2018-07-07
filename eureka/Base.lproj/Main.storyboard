@@ -128,11 +128,28 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zt-yc-9MG">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.001869431103" green="0.65837111479999999" blue="0.0029005925689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NTk-qT-RTp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Editar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitDescricao:" destination="vww-Z8-zHu" eventType="touchUpInside" id="YXS-7s-U7b"/>
+                                    <segue destination="vww-Z8-zHu" kind="show" id="3OE-7u-iD3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v9L-5g-9VK" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="16O-vS-AjM"/>
                             <constraint firstItem="7ml-aX-FYj" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="4kU-nZ-KIx"/>
+                            <constraint firstItem="2Zt-yc-9MG" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="9s2-ps-JEL"/>
                             <constraint firstItem="7ml-aX-FYj" firstAttribute="top" secondItem="i1u-O3-BrF" secondAttribute="bottom" constant="8" id="D92-6c-kjk"/>
                             <constraint firstItem="v9L-5g-9VK" firstAttribute="top" secondItem="7ml-aX-FYj" secondAttribute="bottom" constant="8" id="Doe-ZQ-MEC"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="top" secondItem="afX-ib-0PA" secondAttribute="top" constant="20" id="GPW-9f-3QG"/>
@@ -142,9 +159,11 @@
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="W8S-Lz-4iF"/>
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="i1u-O3-BrF" secondAttribute="trailing" constant="16" id="Xhp-Cl-m3w"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="top" secondItem="afX-ib-0PA" secondAttribute="top" constant="20" id="YE1-5l-QVo"/>
+                            <constraint firstItem="afX-ib-0PA" firstAttribute="bottom" secondItem="2Zt-yc-9MG" secondAttribute="bottom" constant="20" id="bJp-lU-sef"/>
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="v9L-5g-9VK" secondAttribute="trailing" constant="16" id="byp-bx-fSH"/>
                             <constraint firstItem="v9L-5g-9VK" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="ezs-1F-A1G"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="f4f-OF-qA9"/>
+                            <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="2Zt-yc-9MG" secondAttribute="trailing" constant="16" id="jzw-bN-TkV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="afX-ib-0PA"/>
                     </view>
@@ -156,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxu-fk-xND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="-613.04347826086962"/>
+            <point key="canvasLocation" x="1852" y="-616"/>
         </scene>
         <!--Descreva View Controller-->
         <scene sceneID="qkP-kA-IaT">
@@ -182,7 +201,7 @@
                                     <constraint firstAttribute="height" constant="50" id="iWK-le-K9e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Criar canvas">
+                                <state key="normal" title="Canvas">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -835,4 +854,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3OE-7u-iD3"/>
+    </inferredMetricsTieBreakers>
 </document>
