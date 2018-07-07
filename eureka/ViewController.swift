@@ -51,6 +51,11 @@ var ideiasDescricoes = [
     "Poder falar sobre futebol o dia todo e ainda faturar um dinheiro"
 ]
 
+var ideiasImpacto = [70, 60, 60, 60, 40, 50, 75, 45, 60, 55, 60, 40, 55]
+var ideiasEsforco = [60, 45, 70, 34, 54, 87, 65, 49, 65, 55, 78, 36, 80]
+var ideiasLucratividade = [65, 68, 85, 52, 79, 37, 75, 65, 87, 70, 35, 80, 46]
+var ideiasVisao = [65, 80, 55, 80, 70, 45, 60, 55, 77, 56, 65, 32, 80]
+
 var myIndex = 0
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {

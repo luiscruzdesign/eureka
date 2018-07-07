@@ -116,8 +116,14 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota geral: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ml-aX-FYj">
+                                <rect key="frame" x="16" y="242" width="343" height="34"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fazer o melhor jogo de futebol open-source possível, campeonato brasileiro 100% atualizado e com todos os estádios" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9L-5g-9VK">
-                                <rect key="frame" x="16" y="242" width="343" height="61"/>
+                                <rect key="frame" x="16" y="284" width="343" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -126,7 +132,11 @@
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v9L-5g-9VK" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="16O-vS-AjM"/>
+                            <constraint firstItem="7ml-aX-FYj" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="4kU-nZ-KIx"/>
+                            <constraint firstItem="7ml-aX-FYj" firstAttribute="top" secondItem="i1u-O3-BrF" secondAttribute="bottom" constant="8" id="D92-6c-kjk"/>
+                            <constraint firstItem="v9L-5g-9VK" firstAttribute="top" secondItem="7ml-aX-FYj" secondAttribute="bottom" constant="8" id="Doe-ZQ-MEC"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="top" secondItem="afX-ib-0PA" secondAttribute="top" constant="20" id="GPW-9f-3QG"/>
+                            <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="7ml-aX-FYj" secondAttribute="trailing" constant="16" id="Of6-4C-ZCv"/>
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="v9L-5g-9VK" secondAttribute="trailing" constant="16" id="Pas-jk-9nA"/>
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="i1u-O3-BrF" secondAttribute="trailing" constant="16" id="Pxz-7K-fCX"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="W8S-Lz-4iF"/>
@@ -135,13 +145,13 @@
                             <constraint firstItem="afX-ib-0PA" firstAttribute="trailing" secondItem="v9L-5g-9VK" secondAttribute="trailing" constant="16" id="byp-bx-fSH"/>
                             <constraint firstItem="v9L-5g-9VK" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="ezs-1F-A1G"/>
                             <constraint firstItem="i1u-O3-BrF" firstAttribute="leading" secondItem="afX-ib-0PA" secondAttribute="leading" constant="16" id="f4f-OF-qA9"/>
-                            <constraint firstItem="v9L-5g-9VK" firstAttribute="top" secondItem="i1u-O3-BrF" secondAttribute="bottom" constant="8" id="oZz-0F-op6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="afX-ib-0PA"/>
                     </view>
                     <connections>
                         <outlet property="descricaoIdeia" destination="v9L-5g-9VK" id="MAD-26-MxW"/>
                         <outlet property="labelIdeia" destination="i1u-O3-BrF" id="X1O-yN-m8M"/>
+                        <outlet property="notaIdeia" destination="7ml-aX-FYj" id="NM1-BN-AfH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxu-fk-xND" userLabel="First Responder" sceneMemberID="firstResponder"/>

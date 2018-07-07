@@ -11,13 +11,16 @@ import UIKit
 class IdeiaViewController: UIViewController {
     @IBOutlet weak var labelIdeia: UILabel!
     @IBOutlet weak var descricaoIdeia: UILabel!
+    @IBOutlet weak var notaIdeia: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let notaGeral = ideiasImpacto[myIndex] + ideiasEsforco[myIndex] + ideiasLucratividade[myIndex] + ideiasVisao[myIndex]
         labelIdeia.text = ideiasNomes[myIndex]
         descricaoIdeia.text = ideiasDescricoes[myIndex]
+        notaIdeia.text = "Nota geral: " + String(notaGeral)
     }
 
     override func didReceiveMemoryWarning() {
