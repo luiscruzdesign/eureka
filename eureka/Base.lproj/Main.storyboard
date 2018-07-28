@@ -438,7 +438,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estruturas de custos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59n-vZ-bk4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estrutura de custos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59n-vZ-bk4">
                                         <rect key="frame" x="16" y="1232" width="343" height="26"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -540,6 +540,17 @@
                         <viewLayoutGuide key="safeArea" id="UGN-6N-bej"/>
                     </view>
                     <size key="freeformSize" width="375" height="1663"/>
+                    <connections>
+                        <outlet property="atividadesChaveIdeia" destination="hWt-cA-Jdg" id="FrY-9Z-rfc"/>
+                        <outlet property="canaisIdeia" destination="uP7-FV-QQi" id="ym9-dR-TIT"/>
+                        <outlet property="estruturaCustosIdeia" destination="ZXV-M1-nmc" id="GJ2-d3-xQj"/>
+                        <outlet property="fontesReceitaIdeia" destination="aYE-gL-QLw" id="2ZC-sa-q0z"/>
+                        <outlet property="parceriasPrincipaisIdeia" destination="9uP-YL-KFY" id="NFI-xf-DWj"/>
+                        <outlet property="propostaValorIdeia" destination="uRS-1U-EGu" id="8aT-dn-Rvm"/>
+                        <outlet property="recursosPrincipaisIdeia" destination="Brd-aO-JcY" id="8DM-Kh-0T8"/>
+                        <outlet property="relacionamentoClientesIdeia" destination="VFt-VP-oG0" id="RfR-6B-SxX"/>
+                        <outlet property="segmentosIdeia" destination="ZTm-YM-wSp" id="lMU-PA-w01"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1E-xw-jly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

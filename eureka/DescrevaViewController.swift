@@ -31,12 +31,18 @@ class DescrevaViewController: UIViewController {
         }
         
         /* nova ideia */
-        print("------------ \nTela: DESCREVA SUA IDEIA")
+        print("------------ \nTela: INICIAL")
         print("Nome da ideia: " + nome)
         print("Descrição da ideia: " + descricao)
         print("Segmentos de mercado: " + segmentosMercado)
         print("Proposta de valor: " + propostaValor)
         print("Canais: " + canais)
+        print("Atividades-chave: " + atividadesChave)
+        print("Relacionamento com clientes: " +  relacionamentoClientes)
+        print("Recursos principais: " + recursosPrincipais)
+        print("Parcerias principais: " + parceriasPrincipais)
+        print("Fontes de receita: " + fontesReceita)
+        print("Estrutura de custos: " + estruturaCustos)
         print("Impacto: " + String(impacto))
         print("Esforço: " + String(esforco))
         print("Lucratividade: " + String(lucratividade))

@@ -12,6 +12,12 @@ class CanvasViewController: UIViewController {
     @IBOutlet weak var segmentosIdeia: UITextView!
     @IBOutlet weak var propostaValorIdeia: UITextView!
     @IBOutlet weak var canaisIdeia: UITextView!
+    @IBOutlet weak var atividadesChaveIdeia: UITextView!
+    @IBOutlet weak var relacionamentoClientesIdeia: UITextView!
+    @IBOutlet weak var recursosPrincipaisIdeia: UITextView!
+    @IBOutlet weak var parceriasPrincipaisIdeia: UITextView!
+    @IBOutlet weak var fontesReceitaIdeia: UITextView!
+    @IBOutlet weak var estruturaCustosIdeia: UITextView!
     @IBAction func submitCanvas(_ sender: UIButton) {
         if segmentosIdeia.text != "" {
             segmentosMercado = segmentosIdeia.text!
@@ -21,6 +27,24 @@ class CanvasViewController: UIViewController {
         }
         if canaisIdeia.text != "" {
             canais = canaisIdeia.text!
+        }
+        if atividadesChaveIdeia.text != "" {
+            atividadesChave = atividadesChaveIdeia.text!
+        }
+        if relacionamentoClientesIdeia.text != "" {
+            relacionamentoClientes = relacionamentoClientesIdeia.text!
+        }
+        if recursosPrincipaisIdeia.text != "" {
+            recursosPrincipais = recursosPrincipaisIdeia.text!
+        }
+        if parceriasPrincipaisIdeia.text != "" {
+            parceriasPrincipais = parceriasPrincipaisIdeia.text!
+        }
+        if fontesReceitaIdeia.text != "" {
+            fontesReceita = fontesReceitaIdeia.text!
+        }
+        if estruturaCustosIdeia.text != "" {
+            estruturaCustos = estruturaCustosIdeia.text!
         }
     }
     
@@ -36,14 +60,38 @@ class CanvasViewController: UIViewController {
         if canais != "" {
             canaisIdeia.text = canais
         }
+        if atividadesChave != "" {
+            atividadesChaveIdeia.text = atividadesChave
+        }
+        if relacionamentoClientes != "" {
+            relacionamentoClientesIdeia.text = relacionamentoClientes
+        }
+        if recursosPrincipais != "" {
+            recursosPrincipaisIdeia.text = recursosPrincipais
+        }
+        if parceriasPrincipais != "" {
+            parceriasPrincipaisIdeia.text = parceriasPrincipais
+        }
+        if fontesReceita != "" {
+            fontesReceitaIdeia.text = fontesReceita
+        }
+        if estruturaCustos != "" {
+            estruturaCustosIdeia.text = estruturaCustos
+        }
         
         /* nova ideia */
-        print("------------ \nTela: CANVAS DA IDEIA")
+        print("------------ \nTela: INICIAL")
         print("Nome da ideia: " + nome)
         print("Descrição da ideia: " + descricao)
         print("Segmentos de mercado: " + segmentosMercado)
         print("Proposta de valor: " + propostaValor)
         print("Canais: " + canais)
+        print("Atividades-chave: " + atividadesChave)
+        print("Relacionamento com clientes: " +  relacionamentoClientes)
+        print("Recursos principais: " + recursosPrincipais)
+        print("Parcerias principais: " + parceriasPrincipais)
+        print("Fontes de receita: " + fontesReceita)
+        print("Estrutura de custos: " + estruturaCustos)
         print("Impacto: " + String(impacto))
         print("Esforço: " + String(esforco))
         print("Lucratividade: " + String(lucratividade))

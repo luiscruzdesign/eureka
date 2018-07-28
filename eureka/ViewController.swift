@@ -14,6 +14,12 @@ var descricao = ""
 var segmentosMercado = ""
 var propostaValor = ""
 var canais = ""
+var atividadesChave = ""
+var relacionamentoClientes = ""
+var recursosPrincipais = ""
+var parceriasPrincipais = ""
+var fontesReceita = ""
+var estruturaCustos = ""
 var impacto = 0
 var esforco = 0
 var lucratividade = 0
@@ -89,6 +95,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("Segmentos de mercado: " + segmentosMercado)
         print("Proposta de valor: " + propostaValor)
         print("Canais: " + canais)
+        print("Atividades-chave: " + atividadesChave)
+        print("Relacionamento com clientes: " +  relacionamentoClientes)
+        print("Recursos principais: " + recursosPrincipais)
+        print("Parcerias principais: " + parceriasPrincipais)
+        print("Fontes de receita: " + fontesReceita)
+        print("Estrutura de custos: " + estruturaCustos)
         print("Impacto: " + String(impacto))
         print("Esforço: " + String(esforco))
         print("Lucratividade: " + String(lucratividade))
