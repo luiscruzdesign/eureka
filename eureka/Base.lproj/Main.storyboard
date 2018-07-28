@@ -600,7 +600,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitAvaliacao:" destination="Q8b-ne-X3H" eventType="touchUpInside" id="d8d-58-6u1"/>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="rrg-Ju-FS2"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="rrg-Ju-FS2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NG7-a5-c1v">
@@ -1092,7 +1092,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3OE-7u-iD3"/>
+        <segue reference="0WE-b1-OcK"/>
         <segue reference="rrg-Ju-FS2"/>
     </inferredMetricsTieBreakers>
 </document>

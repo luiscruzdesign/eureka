@@ -75,6 +75,24 @@ class AvalieViewController: UIViewController {
         do {
             try context.save()
             print("SAVED")
+            print("Reset values")
+            
+            /* reset value */
+            nome = ""
+            descricao = ""
+            segmentosMercado = ""
+            propostaValor = ""
+            canais = ""
+            atividadesChave = ""
+            relacionamentoClientes = ""
+            recursosPrincipais = ""
+            parceriasPrincipais = ""
+            fontesReceita = ""
+            estruturaCustos = ""
+            impacto = 0
+            esforco = 0
+            lucratividade = 0
+            visao = 0
         } catch {
             // TREAT ERRORS
         }
